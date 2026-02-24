@@ -1,0 +1,43 @@
+---
+title: Number Input
+description: 숫자 값을 반환하고 잘못된 입력을 자동으로 처리하는 입력 필드.
+---
+
+import CodePreview from "@/components/markdown/code-preview/code-preview.astro"
+import Installation from "@/components/markdown/installation-tabs/installation-tabs.astro"
+import ToastProvider from "@/components/markdown/toast-provider.astro"
+
+<CodePreview demo="number-input/basic" />
+
+## 설치
+
+<Installation registryItem="number-input" />
+
+## 사용법
+
+```tsx
+import { useState } from "react"
+import { NumberInput, InputGroupNumberInput } from "@/components/ui/NumberInput"
+```
+
+```tsx
+const [value, setValue] = useState<number | null>(null)
+
+<NumberInput value={value} onChange={setValue} />
+// Or
+<InputGroup>
+  <InputGroupNumberInput value={value} onChange={setValue} />
+</InputGroup>
+```
+
+## 예제
+
+### With Input Group
+
+<CodePreview demo="number-input/input-group" />
+
+### Form
+
+<CodePreview demo="number-input/form" />
+
+<ToastProvider />

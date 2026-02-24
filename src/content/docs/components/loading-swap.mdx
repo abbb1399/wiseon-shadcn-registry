@@ -1,0 +1,29 @@
+---
+title: Loading Swap
+description: 요소 크기 변경 없이 자식 콘텐츠를 로딩 스피너로 교체합니다.
+---
+
+import CodePreview from "@/components/markdown/code-preview/code-preview.astro"
+import Installation from "@/components/markdown/installation-tabs/installation-tabs.astro"
+
+<CodePreview demo="loading-swap/basic" />
+
+## 설치
+
+<Installation registryItem="loading-swap" />
+
+## 사용법
+
+```tsx
+import { LoadingSwap } from "@/components/ui/loading-swap"
+```
+
+```tsx
+<LoadingSwap isLoading>Search</LoadingSwap>
+```
+
+## 예제
+
+### Large components
+
+<CodePreview demo="loading-swap/large-component" />
