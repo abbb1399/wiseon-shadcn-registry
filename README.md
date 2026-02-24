@@ -1,10 +1,10 @@
-# WDS Shadcn Registry
+# WiseOn Shadcn Registry
 
 A collection of accessible components built for use with Shadcn
 
 ## Documentation
 
-Visit https://wds-shadcn-registry.netlify.app to view the documentation.
+Visit https://wiseon-shadcn-registry.vercel.app to view the documentation.
 
 ## Contributing
 

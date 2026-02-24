@@ -16,7 +16,7 @@ function deriveCategory(slug: string) {
 function buildInstallCommand(slug: string): string | undefined {
   const [parent, componentName] = slug.split("/")
   if (parent !== "components" || componentName == null) return undefined
-  return `shadcn add @wds/${componentName}`
+  return `shadcn add @wiseon/${componentName}`
 }
 
 export async function getStaticPaths() {
