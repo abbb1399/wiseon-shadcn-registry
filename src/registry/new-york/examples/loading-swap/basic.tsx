@@ -11,12 +11,12 @@ export function LoadingButton() {
     <Button
       onClick={() => {
         startTransition(async () => {
-          // Simulate loading state
+          // 로딩 딜레이
           await new Promise(res => setTimeout(res, 1000))
         })
       }}
     >
-      <LoadingSwap isLoading={isLoading}>Click Me</LoadingSwap>
+      <LoadingSwap isLoading={isLoading}>클릭</LoadingSwap>
     </Button>
   )
 }

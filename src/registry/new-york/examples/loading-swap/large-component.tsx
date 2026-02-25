@@ -16,15 +16,13 @@ export function LoadingButton() {
   return (
     <div className="flex flex-col gap-2">
       <Button onClick={() => setIsLoading(l => !l)} className="w-fit">
-        Toggle Loading
+        로딩 toggle
       </Button>
       <Card className="w-96">
         <LoadingSwap isLoading={isLoading}>
           <CardHeader>
-            <CardTitle>Larger Component</CardTitle>
-            <CardDescription>
-              Can be used to wrap any components
-            </CardDescription>
+            <CardTitle>큰 컴포넌트</CardTitle>
+            <CardDescription>어떤 컴포넌트든 감쌀 수 있습니다</CardDescription>
           </CardHeader>
         </LoadingSwap>
       </Card>
