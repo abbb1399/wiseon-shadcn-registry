@@ -1,20 +1,37 @@
 ---
 title: 설치
-description: WiseOn Shadcn 컴포넌트를 당신의 프로젝트에 설치 하는법.
+description: WiseOn Shadcn 컴포넌트 설치법.
 ---
 
 import CliCommandCode from "@/components/markdown/cli-command-code/cli-command-code.astro"
 import { SERVER_URL } from "@/data/env"
 
-어떤 프레임워크나 패키지 매니저를 사용하든 상관없습니다. WiseOn Shadcn 컴포넌트 설치는 `shadcn add @wiseon/<component>` 명령어를 실행하고 `<component>` 부분을 원하는 컴포넌트 이름으로 바꾸는 것만큼 간단합니다.
+WiseOn Shadcn 컴포넌트 설치는 `shadcn add @wiseon/<component>` 명령어를 실행하고 `<component>` 를 원하는 부분에 사용하면 됩니다.
 
 전체 설치 과정은 `shadcn` CLI 도구가 처리하며, 다른 Shadcn 컴포넌트를 설치하는 방식과 동일하게 작동합니다.
 
-## 예제
+## components.json 설정 (권장)
 
-<CliCommandCode action="run" command="shadcn@latest add @wiseon/action-button" />
+`components.json`에 WiseOn 레지스트리를 등록하면 매번 전체 URL 없이 `@wiseon/<component>` 형식으로 간편하게 설치할 수 있습니다.
 
-_작동하지 않는 경우 컴포넌트의 JSON 파일 전체 URL을 대신 사용할 수 있습니다._
+```json
+{
+  "registries": {
+    "@wiseon": "https://wiseon-shadcn-registry.vercel.app/r/{name}.json"
+  }
+}
+```
+
+설정 후 다음 명령어로 컴포넌트를 설치하세요.
+
+<CliCommandCode
+  action="run"
+  command="shadcn@latest add @wiseon/action-button"
+/>
+
+## 전체 URL로 설치
+
+`components.json` 설정 없이 전체 URL로 바로 설치할 수도 있습니다.
 
 <CliCommandCode
   action="run"
