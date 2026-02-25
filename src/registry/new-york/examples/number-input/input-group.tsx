@@ -13,7 +13,7 @@ export function BasicNumberInput() {
   return (
     <InputGroup className="w-[300px]">
       <InputGroupNumberInput
-        placeholder="Favorite number"
+        placeholder="좋아하는 숫자"
         value={value}
         onChange={setValue}
       />

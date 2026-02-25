@@ -17,7 +17,7 @@ import {
 import { NumberInput } from "@/registry/experimental/items/number-input/components/number-input"
 
 const formSchema = z.object({
-  age: z.number().min(1),
+  age: z.number().min(1, "유효한 숫자를 입력해주세요."),
   favoriteNumber: z.number().min(1).max(100).nullable(),
 })
 
@@ -30,7 +30,7 @@ export function NumberInputForm() {
   })
 
   function onSubmit(data: z.infer<typeof formSchema>) {
-    toast("You submitted the following values", {
+    toast("제출 완료", {
       description: (
         <pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
           <code className="text-white">{JSON.stringify(data, null, 2)}</code>
@@ -47,7 +47,7 @@ export function NumberInputForm() {
           name="age"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Age</FormLabel>
+              <FormLabel>나이</FormLabel>
               <FormControl>
                 <NumberInput {...field} />
               </FormControl>
@@ -60,16 +60,16 @@ export function NumberInputForm() {
           name="favoriteNumber"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Favorite Number</FormLabel>
+              <FormLabel>좋아하는 숫자</FormLabel>
               <FormControl>
                 <NumberInput {...field} />
               </FormControl>
               <FormMessage />
-              <FormDescription>Optional</FormDescription>
+              <FormDescription>선택 사항</FormDescription>
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button type="submit">제출</Button>
       </form>
     </Form>
   )
