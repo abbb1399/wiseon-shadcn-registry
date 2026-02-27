@@ -26,6 +26,7 @@ import {
 } from "@/components/registry-helpers/icon-placeholder"
 
 export type Demo =
+  | "button/basic"
   | "loading-button/basic"
   | "loading-swap/basic"
   | "loading-swap/large-component"

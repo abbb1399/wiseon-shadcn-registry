@@ -1,0 +1,33 @@
+---
+title: Button
+description: WiseOn 디자인 시스템의 버튼 컴포넌트. 다양한 variant와 size를 제공합니다.
+---
+
+import CodePreview from "@/components/markdown/code-preview/code-preview.astro"
+import Installation from "@/components/markdown/installation-tabs/installation-tabs.astro"
+
+<CodePreview demo="button/basic" />
+
+## 설치
+
+<Installation registryItem="button" />
+
+## 사용법
+
+```tsx
+import { Button } from "@/components/ui/button"
+```
+
+```tsx
+<Button>클릭</Button>
+<Button variant="outline">Outline</Button>
+<Button variant="secondary" size="sm">Small</Button>
+```
+
+## Props
+
+| Prop | 타입 | 기본값 |
+|------|------|--------|
+| `variant` | `"default" \| "dark" \| "outline" \| "secondary" \| "ghost" \| "link" \| "none"` | `"default"` |
+| `size` | `"default" \| "sm" \| "lg" \| "icon"` | `"default"` |
+| `asChild` | `boolean` | `false` |
