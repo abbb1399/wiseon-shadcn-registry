@@ -5,7 +5,7 @@
   "items": [
     {
       "name": "loading-swap",
-      "description": "Swaps content with a loading spinner without layout shift.",
+      "description": "Element 크기 변경 없이 자식 콘텐츠를 로딩 스피너로 교체합니다.",
       "type": "registry:component",
       "files": [
         {
@@ -15,8 +15,8 @@
       ]
     },
     {
-      "name": "action-button",
-      "description": "A button that performs an action when clicked and optionally asks for user confirmation.",
+      "name": "loading-button",
+      "description": "비동기 작업 중 로딩 상태를 시각적으로 나타내는 버튼",
       "type": "registry:component",
       "registryDependencies": [
         "alert-dialog",
@@ -26,14 +26,14 @@
       ],
       "files": [
         {
-          "path": "src/registry/new-york/items/action-button/components/action-button.tsx",
+          "path": "src/registry/new-york/items/loading-button/components/loading-button.tsx",
           "type": "registry:ui"
         }
       ]
     },
     {
       "name": "number-input",
-      "description": "An input that returns a number value and automatically handles invalid inputs.",
+      "description": "숫자를 전용으로 처리하는 Input",
       "type": "registry:component",
       "registryDependencies": ["input"],
       "files": [
@@ -46,7 +46,7 @@
 
     {
       "name": "loading-swap-experimental",
-      "description": "Swaps content with a loading spinner without layout shift. (Includes experimental support for all Shadcn icon libraries)",
+      "description": "Element 크기 변경 없이 자식 콘텐츠를 로딩 스피너로 교체합니다.",
       "type": "registry:component",
       "files": [
         {
@@ -57,8 +57,8 @@
       ]
     },
     {
-      "name": "action-button-experimental",
-      "description": "A button that performs an action when clicked and optionally asks for user confirmation. (Includes experimental support for all Shadcn icon libraries)",
+      "name": "loading-button-experimental",
+      "description": "비동기 작업 중 로딩 상태를 시각적으로 나타내는 버튼",
       "type": "registry:component",
       "registryDependencies": [
         "alert-dialog",
@@ -68,15 +68,15 @@
       ],
       "files": [
         {
-          "path": "src/registry/experimental/items/action-button/components/action-button.tsx",
+          "path": "src/registry/experimental/items/loading-button/components/loading-button.tsx",
           "type": "registry:ui",
-          "target": "components/ui/action-button.tsx"
+          "target": "components/ui/loading-button.tsx"
         }
       ]
     },
     {
       "name": "number-input-experimental",
-      "description": "An input that returns a number value and automatically handles invalid inputs. (Includes experimental support for all Shadcn icon libraries)",
+      "description": "숫자를 전용으로 처리하는 Input",
       "type": "registry:component",
       "registryDependencies": ["input"],
       "files": [
