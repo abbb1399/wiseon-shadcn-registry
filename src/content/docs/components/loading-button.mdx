@@ -1,11 +1,10 @@
 ---
 title: Loading Button
-description: 클릭 시 동작을 수행하며, 선택적으로 사용자 확인을 요청하는 버튼입니다.
+description: 비동기 작업 중 로딩 상태를 시각적으로 나타내는 버튼
 ---
 
 import CodePreview from "@/components/markdown/code-preview/code-preview.astro"
 import Installation from "@/components/markdown/installation-tabs/installation-tabs.astro"
-import ToastProvider from "@/components/markdown/toast-provider.astro"
 
 <CodePreview demo="loading-button/basic" />
 
@@ -13,37 +12,16 @@ import ToastProvider from "@/components/markdown/toast-provider.astro"
 
 <Installation registryItem="loading-button" />
 
-## Usage
+## 사용법
 
 ```tsx
 import { LoadingButton } from "@/components/ui/loading-button"
 ```
 
 ```tsx
-import { updateSettings } from "@/actions/settings"
+const { mutate, isPending } = useMutation({ mutationFn: updateSettings })
 
-const settings = { name: "Kyle" }
-
-<LoadingButton
-  action={updateSettings.bind(null, settings)}
-  requireAreYouSure
->
-  Save Settings
+<LoadingButton isLoading={isPending} onClick={() => mutate(settings)}>
+  저장하기
 </LoadingButton>
 ```
-
-## Examples
-
-### Default
-
-<CodePreview demo="loading-button/default" />
-
-### Require Are You Sure
-
-<CodePreview demo="loading-button/require-are-you-sure" />
-
-### With Error
-
-<CodePreview demo="loading-button/error" />
-
-<ToastProvider />

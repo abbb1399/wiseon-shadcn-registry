@@ -27,9 +27,6 @@ import {
 
 export type Demo =
   | "loading-button/basic"
-  | "loading-button/default"
-  | "loading-button/error"
-  | "loading-button/require-are-you-sure"
   | "loading-swap/basic"
   | "loading-swap/large-component"
   | "multi-select/basic"

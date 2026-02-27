@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "loading-button-experimental",
-  "description": "클릭 시 동작을 수행하며, 선택적으로 사용자 확인을 요청하는 버튼입니다. (모든 Shadcn 아이콘 라이브러리에 대한 실험적 지원 포함)",
+  "description": "비동기 작업 중 로딩 상태를 시각적으로 나타내는 버튼",
   "registryDependencies": [
     "alert-dialog",
     "button",
