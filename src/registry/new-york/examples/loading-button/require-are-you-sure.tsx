@@ -1,4 +1,4 @@
-import { ActionButton } from "@/registry/experimental/items/action-button/components/action-button"
+import { LoadingButton } from "@/registry/new-york/items/loading-button/components/loading-button"
 
 const serverAction = async () => {
   // Simulate a server action
@@ -6,14 +6,14 @@ const serverAction = async () => {
   return { error: false }
 }
 
-export function AreYouSureActionButton() {
+export function AreYouSureLoadingButton() {
   return (
-    <ActionButton
+    <LoadingButton
       action={serverAction}
       requireAreYouSure
       areYouSureDescription="I can put anything I want here."
     >
       Do extra secure action
-    </ActionButton>
+    </LoadingButton>
   )
 }

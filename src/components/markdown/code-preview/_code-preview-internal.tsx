@@ -26,10 +26,10 @@ import {
 } from "@/components/registry-helpers/icon-placeholder"
 
 export type Demo =
-  | "action-button/basic"
-  | "action-button/default"
-  | "action-button/error"
-  | "action-button/require-are-you-sure"
+  | "loading-button/basic"
+  | "loading-button/default"
+  | "loading-button/error"
+  | "loading-button/require-are-you-sure"
   | "loading-swap/basic"
   | "loading-swap/large-component"
   | "multi-select/basic"

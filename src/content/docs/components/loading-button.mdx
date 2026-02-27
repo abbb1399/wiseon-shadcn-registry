@@ -1,5 +1,5 @@
 ---
-title: Action Button
+title: Loading Button
 description: 클릭 시 동작을 수행하며, 선택적으로 사용자 확인을 요청하는 버튼입니다.
 ---
 
@@ -7,16 +7,16 @@ import CodePreview from "@/components/markdown/code-preview/code-preview.astro"
 import Installation from "@/components/markdown/installation-tabs/installation-tabs.astro"
 import ToastProvider from "@/components/markdown/toast-provider.astro"
 
-<CodePreview demo="action-button/basic" />
+<CodePreview demo="loading-button/basic" />
 
 ## 설치
 
-<Installation registryItem="action-button" />
+<Installation registryItem="loading-button" />
 
 ## Usage
 
 ```tsx
-import { ActionButton } from "@/components/ui/action-button"
+import { LoadingButton } from "@/components/ui/loading-button"
 ```
 
 ```tsx
@@ -24,26 +24,26 @@ import { updateSettings } from "@/actions/settings"
 
 const settings = { name: "Kyle" }
 
-<ActionButton
+<LoadingButton
   action={updateSettings.bind(null, settings)}
   requireAreYouSure
 >
   Save Settings
-</ActionButton>
+</LoadingButton>
 ```
 
 ## Examples
 
 ### Default
 
-<CodePreview demo="action-button/default" />
+<CodePreview demo="loading-button/default" />
 
 ### Require Are You Sure
 
-<CodePreview demo="action-button/require-are-you-sure" />
+<CodePreview demo="loading-button/require-are-you-sure" />
 
 ### With Error
 
-<CodePreview demo="action-button/error" />
+<CodePreview demo="loading-button/error" />
 
 <ToastProvider />

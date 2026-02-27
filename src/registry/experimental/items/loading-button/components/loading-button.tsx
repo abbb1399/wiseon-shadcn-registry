@@ -16,7 +16,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
 
-export function ActionButton({
+export function LoadingButton({
   action,
   requireAreYouSure = false,
   areYouSureDescription = "This action cannot be undone.",

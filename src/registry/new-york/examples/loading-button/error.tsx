@@ -1,4 +1,4 @@
-import { ActionButton } from "@/registry/experimental/items/action-button/components/action-button"
+import { LoadingButton } from "@/registry/new-york/items/loading-button/components/loading-button"
 
 const serverAction = async () => {
   // Simulate a server action
@@ -9,10 +9,10 @@ const serverAction = async () => {
   }
 }
 
-export function ErrorActionButton() {
+export function ErrorLoadingButton() {
   return (
-    <ActionButton variant="destructive" action={serverAction}>
+    <LoadingButton variant="destructive" action={serverAction}>
       Do error action
-    </ActionButton>
+    </LoadingButton>
   )
 }
