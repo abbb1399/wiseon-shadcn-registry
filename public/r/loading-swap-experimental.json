@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "loading-swap-experimental",
-  "description": "Swaps content with a loading spinner without layout shift. (Includes experimental support for all Shadcn icon libraries)",
+  "description": "Element 크기 변경 없이 자식 콘텐츠를 로딩 스피너로 교체합니다.",
   "files": [
     {
       "path": "src/registry/experimental/items/loading-swap/components/loading-swap.tsx",
